@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html class="en">
+
+<head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+    <link href="./assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <title>Ice Casino</title>
+    <link href="style/css/style.css" rel="stylesheet">
+
+
+
+</head>
+<style>
+    .popup_email .btn-flat
+    {
+      width: 50%;
+      text-decoration: none;
+      padding: 21px 78px;
+      background: linear-gradient(#3598fe, #3598fe);
+      box-shadow: 0 0 10px rgb(54 92 239 / 80%), 0 0 40px rgb(54 92 239 / 50%),
+      0 0 40px rgb(54 92 239 / 50%);
+      color: #fff;
+      width: 220px;
+      text-align: center;
+      margin: 18px auto 10px;
+      display: block;
+      padding: 12px;
+      font-size: 22px;
+      border-radius: 10px;
+      border: 0;
+      font-weight: bold;   
+    }
+    .email-enter
+    {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: GothamProBlack, Roboto, Arial, sans-serif;
+        font-size: 24px;
+    }
+   @media (max-width:720px) {
+    .popup_email .btn-flat
+    {
+      width: 50%;
+      text-decoration: none;
+      padding: 21px 78px;
+      background: linear-gradient(#3598fe, #3598fe);
+      box-shadow: 0 0 10px rgb(54 92 239 / 80%), 0 0 40px rgb(54 92 239 / 50%),
+      0 0 40px rgb(54 92 239 / 50%);
+      color: #fff;
+      width: 180px;
+      text-align: center;
+      margin: 10px auto 10px;
+      display: block;
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 10px;
+      border: 0;
+      font-weight: bold;   
+    }
+    .enter-email
+    {
+        display: flex;
+        flex-direction: column;
+        font-size: 17px;
+    
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: GothamProBlack, Roboto, Arial, sans-serif;
+        font-size: 18px;
+
+
+    }
+    .popup_email .field-email
+    {   
+        width: 90%;
+        padding: 13px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #000; 
+         background-color: #fff; 
+        font-family: Arial, sans-serif; 
+        font-size: 16px;
+    }
+    .popup_window#popup_window_3 {
+    font-size: .8em;
+}
+    }
+    .text-beneath{
+        color: white;
+        font-size: 12px;
+    }
+    .text-beneath a{
+        color: #3598fe;
+        font-size: 12px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 820px) {
+        .popup_email .field-email
+       {   
+        width: 80%;
+       
+       }
+       .popup_email .btn-flat
+       {
+         width: 161px;
+         font-size: 14px;
+         margin-top: 10px;
+       }
+    }
+
+    @media (max-width:365px) {
+        .popup_window#popup_window_3 {
+    font-size: .9em;
+}
+    }
+
+</style>
+
+<body class="page">
+    <div class="preloader"><img alt="" src="./assets/img/preloader.svg"></div>
+    <div class="blur_wrap">
+        <div class="layout">
+
+            <div class="lang_switcher_outer">
+                <div class="lang_switcher">
+                    <p>
+                        <span class="en">Language</span>
+                        <span class="th">ภาษา</span>
+                        <span class="vn">Ngôn ngữ</span>
+                        <span class="ph">Language</span>
+                        <span class="de">Sprache</span>
+                        <span class="ru">Язык</span>
+                        <span class="pl">Język</span>
+                        <span class="no">Tunge</span>
+                        <span class="dk">Sprog</span>
+                        <span class="cz">Jazyk</span>
+                        <span class="ro">Limba</span>
+                        <span class="ee">Keel</span>
+                        <span class="lv">Valodu</span>
+                        <span class="lt">Kalba</span>
+                        <span class="el">Γλώσσα</span>
+                        <span class="hu">Nyelv</span>
+                        <span class="jp">言語</span>
+                        <span class="pt">Língua</span>
+                        <span class="es">Idioma</span>
+                    </p>
+                    <div class="curr_lang"></div>
+                    <i class="lang_arr"></i>
+                </div>
+                <ul class="lang_list">
+                    <li class="lang_list_item" data-lang="en"><em class="lang_flag flag_en"></em> <span>en</span></li>
+                    <li class="lang_list_item" data-lang="de"><em class="lang_flag flag_de"></em> <span>de</span></li>
+                    <li class="lang_list_item" data-lang="ru"><em class="lang_flag flag_ru"></em> <span>ru</span></li>
+                    <li class="lang_list_item" data-lang="pl"><em class="lang_flag flag_pl"></em> <span>pl</span></li>
+                    <li class="lang_list_item" data-lang="no"><em class="lang_flag flag_no"></em> <span>no</span></li>
+                    <li class="lang_list_item" data-lang="dk"><em class="lang_flag flag_dk"></em> <span>dk</span></li>
+                    <li class="lang_list_item" data-lang="cz"><em class="lang_flag flag_cz"></em> <span>cz</span></li>
+                    <li class="lang_list_item" data-lang="ro"><em class="lang_flag flag_ro"></em> <span>ro</span></li>
+                    <li class="lang_list_item" data-lang="ee"><em class="lang_flag flag_ee"></em> <span>ee</span></li>
+                    <li class="lang_list_item" data-lang="lv"><em class="lang_flag flag_lv"></em> <span>lv</span></li>
+                    <li class="lang_list_item" data-lang="lt"><em class="lang_flag flag_lt"></em> <span>lt</span></li>
+                    <li class="lang_list_item" data-lang="el"><em class="lang_flag flag_gr"></em> <span>gr</span></li>
+                    <li class="lang_list_item" data-lang="hu"><em class="lang_flag flag_hu"></em> <span>hu</span></li>
+                    <li class="lang_list_item" data-lang="jp"><em class="lang_flag flag_jp"></em> <span>jp</span></li>
+                    <li class="lang_list_item" data-lang="pt"><em class="lang_flag flag_pt"></em> <span>pt</span></li>
+                    <li class="lang_list_item" data-lang="es"><em class="lang_flag flag_es"></em> <span>es</span></li>
+                    <li class="lang_list_item" data-lang="vn"><em class="lang_flag flag_vn"></em> <span>vn</span></li>
+                    <li class="lang_list_item" data-lang="th"><em class="lang_flag flag_th"></em> <span>th</span></li>
+                    <li class="lang_list_item" data-lang="ph"><em class="lang_flag flag_ph"></em> <span>ph</span></li>
+                </ul>
+            </div>
+
+            <div class="logo_wrap">
+                <a class="logo en" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo de" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo ru" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo pl" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo no" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo dk" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo cz" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo ro" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo ee" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo lv" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo lt" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo el" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo hu" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo jp" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo pt" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo es" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo vn" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo th" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+                <a class="logo ph" href="/go?atp=square_3868483&goto=sitereg&clickid=&plid=12002&bnid=26798&po=&lang=cs&cc=CZ&pid=7110&timestamp=1693571109.7401"><img alt="" src="./assets/img/Vyhraj-logo-border.png"></a>
+            </div>
+
+            <div class="container">
+
+                <div class="game_wrap">
+                    <div class="bonuses">
+                        <div class="bonus_1 bonus_wrap">
+                            <div>
+                                <img alt="" src="./assets/img/fs-icon.svg">
+                                <em>Fs:</em>
+                            </div>
+                            <strong>77</strong>
+                        </div>
+                        <div class="bonus_2 bonus_wrap ">
+                            <div>
+                                <img alt="" src="./assets/img/money-icon.svg">
+                                <em>
+                                <span class="en">€:</span>
+                                <span class="ph">PHP:</span>
+                                <span class="vn">VND:</span>
+                                <span class="th">THB:</span>
+                                <span class="ru">€:</span>
+                                <span class="hu">HUF:</span>
+                                <span class="el">€:</span>
+                                <span class="ee">€:</span>
+                                <span class="de">€:</span>
+                                <span class="pl">zł:</span>
+                                <span class="no">NOK:</span>
+                                <span class="dk">DKK:</span>
+                                <span class="cz">€:</span>
+                                <span class="lv">€:</span>
+                                <span class="lt">€:</span>
+                                <span class="ro">RON:</span>
+                                <span class="jp">JPY:</span>
+                                <span class="pt">€:</span>
+                                <span class="es">
+                                    <span class="elem_cur_ar">ARS:</span>
+                                    <span class="elem_cur_cl">CLP:</span>
+                                    <span class="elem_cur_pe">PEN:</span>
+                                    <span class="elem_cur_ec">USD:</span>
+                                </span>
+                            </em>
+                            </div>
+                            <strong>
+                            <span class="en">2000</span>
+                            <span class="ph">116 000</span>
+                            <span class="vn">50 TRIỆU</span>
+                            <span class="th">74 000</span>
+                            <span class="ru">2000</span>
+                            <span class="pt">
+                                <span class="elem_cur_brl">10000</span>
+                                <span class="elem_cur_pt">2000</span>
+                            </span>
+                            <span class="el">2000</span>
+                            <span class="lt">2000</span>
+                            <span class="lv">2000</span>
+                            <span class="ee">2000</span>
+                            <span class="de">2000</span>
+                            <span class="pl">8000</span>
+                            <span class="no">20000</span>
+                            <span class="hu">600 000</span>
+                            <span class="jp">200 000</span>
+                            <span class="dk">10000</span>
+                            <span class="cz">2000</span>
+                            <span class="es">
+                                <span class="elem_cur_ar">200 000</span>
+                                <span class="elem_cur_cl">1 800 000</span>
+                                <span class="elem_cur_pe">8000</span>
+                                <span class="elem_cur_ec">2000</span>
+                            </span>
+                            <span class="ro">8000</span>
+                        </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="game_outer" id="game_1">
+                        <div class="text">
+                            <img alt="" id="text-img" src="./assets/img/text-en.png">
+                        </div>
+                        <div class="wheel_wrap">
+                            <div class="wheel_win_frame"></div>
+                            <div class="wheel_bg"></div>
+                            <div class="fruits">
+                                <img alt="" src="./assets/img/fruits.png">
+                            </div>
+                            <div data-path="./assets/img" id="wheel-spinner">
+                                <img alt="" class="wheel_spinner wheel_spinner_animated" id="wheel-spinner-img" src="./assets/img/wheel_en.png">
+                            </div>
+
+                            <div class="wheel_btn spin">
+                                <span class="en">Spin</span>
+                                <span class="ph">Spin</span>
+                                <span class="th">หมุน</span>
+                                <span class="vn">QUAY</span>
+                                <span class="de">Dreh</span>
+                                <span class="ru">Крутить</span>
+                                <span class="pl">Zakręć</span>
+                                <span class="no">Spinn</span>
+                                <span class="dk">Spin</span>
+                                <span class="cz">Zatočte</span>
+                                <span class="ro">Învârtiți</span>
+                                <span class="ee">Keeruta</span>
+                                <span class="lv">Griezt</span>
+                                <span class="lt">Sukti</span>
+                                <span class="el">Γύρνα</span>
+                                <span class="hu">Pörgetés</span>
+                                <span class="jp">スピン</span>
+                                <span class="pt">Gire</span>
+                                <span class="es">Girar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game_outer" id="game_2">
+                        <div class="txt_1 en">Scratch the cards and<br> get your bonus</div>
+                        <div class="txt_1 de">Rubbeln Sie die Lose und<br> erhalten Sie Ihren Bonus</div>
+                        <div class="txt_1 ru">СТИРАЙ КАРТОЧКИ И<br> ПОЛУЧАЙ БОНУС</div>
+                        <div class="txt_1 pl">Zdrap karty i odbierz bonus</div>
+                        <div class="txt_1 no">Skrap kortene og<br> få bonusen din</div>
+                        <div class="txt_1 dk">Scratch the cards and<br> get your bonus</div>
+                        <div class="txt_1 cz">Stírejte karty a<br> získejte bonus</div>
+                        <div class="txt_1 ro">Răzuiți cartonașele și<br> obțineți bonusul</div>
+                        <div class="txt_1 ee">Kraabi kaardid ja<br> saa boonust</div>
+                        <div class="txt_1 lv">Nokasiet kartītes un<br> saņemiet savu bonusu</div>
+                        <div class="txt_1 lt">Nutrinkite kortelę ir<br> gaukite premiją</div>
+                        <div class="txt_1 el">Ξύσε τις κάρτες και<br> πάρε το μπόνους</div>
+                        <div class="txt_1 hu">Kapard le a kártyákat,<br> és szerezd meg a bónuszod</div>
+                        <div class="txt_1 jp">カードをスクラッチしてボーナスをゲット</div>
+                        <div class="txt_1 pt">Raspe as cartas e<br> receba seu bônus</div>
+                        <div class="txt_1 es">Raspa las tarjetas<br> y obtén tu bono</div>
+                        <div class="txt_1 vn">Cào thẻ và nhận tiền thưởng</div>
+                        <div class="txt_1 th">ขูดไพ่และรับโบนัสของคุณ</div>
+                        <div class="txt_1 ph">Scratch the cards and<br> get your bonus</div>
+                        <div class="scratches_wrap">
+
+                            <div class="scratch_outer scratch" id="scratch_1" data-scratch="scratch1">
+                                <div class="scratch_hover"></div>
+                                <img alt="" class="scratch_action" src="./assets/img/scratch-anim.gif">
+                                <img alt="" class="scratch_used" src="./assets/img/scratch-used.png">
+                                <div class="scratch_bonus">
+                                    <picture class="en">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="th">
+                                        <source srcset="./assets/img/thb.webp" type="image/webp">
+                                        <source srcset="./assets/img/thb.jpg" type="image/jpeg">
+                                        <img src="./assets/img/thb.jpg">
+                                    </picture>
+                                    <picture class="ph">
+                                        <source srcset="./assets/img/php.webp" type="image/webp">
+                                        <source srcset="./assets/img/php.jpg" type="image/jpeg">
+                                        <img src="./assets/img/php.jpg">
+                                    </picture>
+                                    <picture class="vn">
+                                        <source srcset="./assets/img/vnd.webp" type="image/webp">
+                                        <source srcset="./assets/img/vnd.jpg" type="image/jpeg">
+                                        <img src="./assets/img/vnd.jpg">
+                                    </picture>
+                                    <picture class="ru">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="el">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="lt">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="de">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="lv">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="ee">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="pl">
+                                        <source srcset="./assets/img/plzl.webp" type="image/webp">
+                                        <source srcset="./assets/img/plzl.jpg" type="image/jpeg">
+                                        <img src="./assets/img/plzl.jpg">
+                                    </picture>
+                                    <picture class="no">
+                                        <source srcset="./assets/img/nok.webp" type="image/webp">
+                                        <source srcset="./assets/img/nok.jpg" type="image/jpeg">
+                                        <img src="./assets/img/nok.jpg">
+                                    </picture>
+                                    <picture class="dk">
+                                        <source srcset="./assets/img/dkk.webp" type="image/webp">
+                                        <source srcset="./assets/img/dkk.jpg" type="image/jpeg">
+                                        <img src="./assets/img/dkk.jpg">
+                                    </picture>
+                                    <picture class="cz">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="ro">
+                                        <source srcset="./assets/img/ron.webp" type="image/webp">
+                                        <source srcset="./assets/img/ron.jpg" type="image/jpeg">
+                                        <img src="./assets/img/ron.jpg">
+                                    </picture>
+                                    <picture class="hu">
+                                        <source srcset="./assets/img/huf.webp" type="image/webp">
+                                        <source srcset="./assets/img/huf.jpg" type="image/jpeg">
+                                        <img src="./assets/img/huf.jpg">
+                                    </picture>
+                                    <picture class="jp">
+                                        <source srcset="./assets/img/jpy.webp" type="image/webp">
+                                        <source srcset="./assets/img/jpy.jpg" type="image/jpeg">
+                                        <img src="./assets/img/jpy.jpg">
+                                    </picture>
+                                    <div class="pt">
+                                        <div class="elem_cur_pt">
+                                            <picture>
+                                                <source srcset="./assets/img/euro.webp" type="image/webp">
+                                                <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                                <img src="./assets/img/euro.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_brl">
+                                            <picture>
+                                                <source srcset="./assets/img/brl.webp" type="image/webp">
+                                                <source srcset="./assets/img/brl.jpg" type="image/jpeg">
+                                                <img src="./assets/img/brl.jpg">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="es">
+                                        <div class="elem_cur_ar">
+                                            <picture>
+                                                <source srcset="./assets/img/ars.webp" type="image/webp">
+                                                <source srcset="./assets/img/ars.jpg" type="image/jpeg">
+                                                <img src="./assets/img/ars.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_cl">
+                                            <picture>
+                                                <source srcset="./assets/img/clp.webp" type="image/webp">
+                                                <source srcset="./assets/img/clp.jpg" type="image/jpeg">
+                                                <img src="./assets/img/clp.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_pe">
+                                            <picture>
+                                                <source srcset="./assets/img/pen.webp" type="image/webp">
+                                                <source srcset="./assets/img/pen.jpg" type="image/jpeg">
+                                                <img src="./assets/img/pen.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_ec">
+                                            <picture>
+                                                <img src="./assets/img/usd.jpg">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scratch_txt">
+                                    <div class="en">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ph">
+                                        <picture class="x58 x_img">
+                                            <source srcset="./assets/img/x58.webp" type="image/webp">
+                                            <source srcset="./assets/img/x58.png" type="image/png">
+                                            <img src="./assets/img/x58.png">
+                                        </picture>
+                                    </div>
+                                    <div class="th">
+                                        <picture class="x37 x_img">
+                                            <source srcset="./assets/img/x37.webp" type="image/webp">
+                                            <source srcset="./assets/img/x37.png" type="image/png">
+                                            <img src="./assets/img/x37.png">
+                                        </picture>
+                                    </div>
+                                    <div class="vn">
+                                        <picture class="x50 x_img">
+                                            <source srcset="./assets/img/x50.webp" type="image/webp">
+                                            <source srcset="./assets/img/x50.png" type="image/png">
+                                            <img src="./assets/img/x50.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ru">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="pt">
+                                        <div class="elem_cur_pt">
+                                            <picture class="x10 x_img">
+                                                <source srcset="./assets/img/x10.webp" type="image/webp">
+                                                <source srcset="./assets/img/x10.png" type="image/png">
+                                                <img src="./assets/img/x10.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_brl">
+                                            <picture class="x25 x_img">
+                                                <source srcset="./assets/img/x25.webp" type="image/webp">
+                                                <source srcset="./assets/img/x25.png" type="image/png">
+                                                <img src="./assets/img/x25.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="jp">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="hu">
+                                        <picture class="x15 x_img">
+                                            <source srcset="./assets/img/x15.webp" type="image/webp">
+                                            <source srcset="./assets/img/x15.png" type="image/png">
+                                            <img src="./assets/img/x15.png">
+                                        </picture>
+                                    </div>
+                                    <div class="el">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="lt">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="lv">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ee">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="cz">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="de">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="no">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="dk">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="pl">
+                                        <picture class="x8 x_img">
+                                            <source srcset="./assets/img/x8.webp" type="image/webp">
+                                            <source srcset="./assets/img/x8.png" type="image/png">
+                                            <img src="./assets/img/x8.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ro">
+                                        <picture class="x8 x_img">
+                                            <source srcset="./assets/img/x8.webp" type="image/webp">
+                                            <source srcset="./assets/img/x8.png" type="image/png">
+                                            <img src="./assets/img/x8.png">
+                                        </picture>
+                                    </div>
+                                    <div class="es">
+                                        <div class="elem_cur_ar">
+                                            <picture class="x100 x_img">
+                                                <source srcset="./assets/img/x100.webp" type="image/webp">
+                                                <source srcset="./assets/img/x100.png" type="image/png">
+                                                <img src="./assets/img/x100.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_cl">
+                                            <picture class="x35 x_img">
+                                                <source srcset="./assets/img/x45.webp" type="image/webp">
+                                                <source srcset="./assets/img/x45.png" type="image/png">
+                                                <img src="./assets/img/x45.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_pe">
+                                            <picture class="x20 x_img">
+                                                <source srcset="./assets/img/x20.webp" type="image/webp">
+                                                <source srcset="./assets/img/x20.png" type="image/png">
+                                                <img src="./assets/img/x20.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_ec">
+                                            <picture class="x10 x_img">
+                                                <source srcset="./assets/img/x10.webp" type="image/webp">
+                                                <source srcset="./assets/img/x10.png" type="image/png">
+                                                <img src="./assets/img/x10.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scratch_outer scratch" id="scratch_2" data-scratch="scratch2">
+                                <div class="scratch_hover"></div>
+                                <img alt="" class="scratch_action" src="./assets/img/scratch-anim.gif">
+                                <img alt="" class="scratch_used" src="./assets/img/scratch-used.png">
+                                <div class="scratch_bonus">
+                                    <picture class="en">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="th">
+                                        <source srcset="./assets/img/thb.webp" type="image/webp">
+                                        <source srcset="./assets/img/thb.jpg" type="image/jpeg">
+                                        <img src="./assets/img/thb.jpg">
+                                    </picture>
+                                    <picture class="ph">
+                                        <source srcset="./assets/img/php.webp" type="image/webp">
+                                        <source srcset="./assets/img/php.jpg" type="image/jpeg">
+                                        <img src="./assets/img/php.jpg">
+                                    </picture>
+                                    <picture class="vn">
+                                        <source srcset="./assets/img/vnd.webp" type="image/webp">
+                                        <source srcset="./assets/img/vnd.jpg" type="image/jpeg">
+                                        <img src="./assets/img/vnd.jpg">
+                                    </picture>
+                                    <picture class="ru">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="el">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="lt">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="de">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="lv">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="ee">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="pl">
+                                        <source srcset="./assets/img/plzl.webp" type="image/webp">
+                                        <source srcset="./assets/img/plzl.jpg" type="image/jpeg">
+                                        <img src="./assets/img/plzl.jpg">
+                                    </picture>
+                                    <picture class="no">
+                                        <source srcset="./assets/img/nok.webp" type="image/webp">
+                                        <source srcset="./assets/img/nok.jpg" type="image/jpeg">
+                                        <img src="./assets/img/nok.jpg">
+                                    </picture>
+                                    <picture class="dk">
+                                        <source srcset="./assets/img/dkk.webp" type="image/webp">
+                                        <source srcset="./assets/img/dkk.jpg" type="image/jpeg">
+                                        <img src="./assets/img/dkk.jpg">
+                                    </picture>
+                                    <picture class="cz">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="ro">
+                                        <source srcset="./assets/img/ron.webp" type="image/webp">
+                                        <source srcset="./assets/img/ron.jpg" type="image/jpeg">
+                                        <img src="./assets/img/ron.jpg">
+                                    </picture>
+                                    <picture class="hu">
+                                        <source srcset="./assets/img/huf.webp" type="image/webp">
+                                        <source srcset="./assets/img/huf.jpg" type="image/jpeg">
+                                        <img src="./assets/img/huf.jpg">
+                                    </picture>
+                                    <picture class="jp">
+                                        <source srcset="./assets/img/jpy.webp" type="image/webp">
+                                        <source srcset="./assets/img/jpy.jpg" type="image/jpeg">
+                                        <img src="./assets/img/jpy.jpg">
+                                    </picture>
+                                    <div class="pt">
+                                        <div class="elem_cur_pt">
+                                            <picture>
+                                                <source srcset="./assets/img/euro.webp" type="image/webp">
+                                                <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                                <img src="./assets/img/euro.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_brl">
+                                            <picture>
+                                                <source srcset="./assets/img/brl.webp" type="image/webp">
+                                                <source srcset="./assets/img/brl.jpg" type="image/jpeg">
+                                                <img src="./assets/img/brl.jpg">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="es">
+                                        <div class="elem_cur_ar">
+                                            <picture>
+                                                <source srcset="./assets/img/ars.webp" type="image/webp">
+                                                <source srcset="./assets/img/ars.jpg" type="image/jpeg">
+                                                <img src="./assets/img/ars.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_cl">
+                                            <picture>
+                                                <source srcset="./assets/img/clp.webp" type="image/webp">
+                                                <source srcset="./assets/img/clp.jpg" type="image/jpeg">
+                                                <img src="./assets/img/clp.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_pe">
+                                            <picture>
+                                                <source srcset="./assets/img/pen.webp" type="image/webp">
+                                                <source srcset="./assets/img/pen.jpg" type="image/jpeg">
+                                                <img src="./assets/img/pen.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_ec">
+                                            <picture>
+                                                <img src="./assets/img/usd.jpg">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scratch_txt">
+                                    <div class="en">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ph">
+                                        <picture class="x58 x_img">
+                                            <source srcset="./assets/img/x58.webp" type="image/webp">
+                                            <source srcset="./assets/img/x58.png" type="image/png">
+                                            <img src="./assets/img/x58.png">
+                                        </picture>
+                                    </div>
+                                    <div class="th">
+                                        <picture class="x37 x_img">
+                                            <source srcset="./assets/img/x37.webp" type="image/webp">
+                                            <source srcset="./assets/img/x37.png" type="image/png">
+                                            <img src="./assets/img/x37.png">
+                                        </picture>
+                                    </div>
+                                    <div class="vn">
+                                        <picture class="x50 x_img">
+                                            <source srcset="./assets/img/x50.webp" type="image/webp">
+                                            <source srcset="./assets/img/x50.png" type="image/png">
+                                            <img src="./assets/img/x50.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ru">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="pt">
+                                        <div class="elem_cur_pt">
+                                            <picture class="x10 x_img">
+                                                <source srcset="./assets/img/x10.webp" type="image/webp">
+                                                <source srcset="./assets/img/x10.png" type="image/png">
+                                                <img src="./assets/img/x10.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_brl">
+                                            <picture class="x25 x_img">
+                                                <source srcset="./assets/img/x25.webp" type="image/webp">
+                                                <source srcset="./assets/img/x25.png" type="image/png">
+                                                <img src="./assets/img/x25.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="jp">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="hu">
+                                        <picture class="x15 x_img">
+                                            <source srcset="./assets/img/x15.webp" type="image/webp">
+                                            <source srcset="./assets/img/x15.png" type="image/png">
+                                            <img src="./assets/img/x15.png">
+                                        </picture>
+                                    </div>
+                                    <div class="el">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="lt">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="lv">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ee">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="cz">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="de">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="no">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="dk">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="pl">
+                                        <picture class="x8 x_img">
+                                            <source srcset="./assets/img/x8.webp" type="image/webp">
+                                            <source srcset="./assets/img/x8.png" type="image/png">
+                                            <img src="./assets/img/x8.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ro">
+                                        <picture class="x8 x_img">
+                                            <source srcset="./assets/img/x8.webp" type="image/webp">
+                                            <source srcset="./assets/img/x8.png" type="image/png">
+                                            <img src="./assets/img/x8.png">
+                                        </picture>
+                                    </div>
+                                    <div class="es">
+                                        <div class="elem_cur_ar">
+                                            <picture class="x100 x_img">
+                                                <source srcset="./assets/img/x100.webp" type="image/webp">
+                                                <source srcset="./assets/img/x100.png" type="image/png">
+                                                <img src="./assets/img/x100.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_cl">
+                                            <picture class="x35 x_img">
+                                                <source srcset="./assets/img/x45.webp" type="image/webp">
+                                                <source srcset="./assets/img/x45.png" type="image/png">
+                                                <img src="./assets/img/x45.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_pe">
+                                            <picture class="x20 x_img">
+                                                <source srcset="./assets/img/x20.webp" type="image/webp">
+                                                <source srcset="./assets/img/x20.png" type="image/png">
+                                                <img src="./assets/img/x20.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_ec">
+                                            <picture class="x10 x_img">
+                                                <source srcset="./assets/img/x10.webp" type="image/webp">
+                                                <source srcset="./assets/img/x10.png" type="image/png">
+                                                <img src="./assets/img/x10.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scratch_outer scratch" id="scratch_3" data-scratch="scratch3">
+                                <div class="scratch_hover"></div>
+                                <img alt="" class="scratch_action" src="./assets/img/scratch-anim.gif">
+                                <img alt="" class="scratch_used" src="./assets/img/scratch-used.png">
+                                <div class="scratch_bonus">
+                                    <picture class="en">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="th">
+                                        <source srcset="./assets/img/thb.webp" type="image/webp">
+                                        <source srcset="./assets/img/thb.jpg" type="image/jpeg">
+                                        <img src="./assets/img/thb.jpg">
+                                    </picture>
+                                    <picture class="ph">
+                                        <source srcset="./assets/img/php.webp" type="image/webp">
+                                        <source srcset="./assets/img/php.jpg" type="image/jpeg">
+                                        <img src="./assets/img/php.jpg">
+                                    </picture>
+                                    <picture class="vn">
+                                        <source srcset="./assets/img/vnd.webp" type="image/webp">
+                                        <source srcset="./assets/img/vnd.jpg" type="image/jpeg">
+                                        <img src="./assets/img/vnd.jpg">
+                                    </picture>
+                                    <picture class="ru">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="el">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="lt">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="de">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="lv">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="ee">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="pl">
+                                        <source srcset="./assets/img/plzl.webp" type="image/webp">
+                                        <source srcset="./assets/img/plzl.jpg" type="image/jpeg">
+                                        <img src="./assets/img/plzl.jpg">
+                                    </picture>
+                                    <picture class="no">
+                                        <source srcset="./assets/img/nok.webp" type="image/webp">
+                                        <source srcset="./assets/img/nok.jpg" type="image/jpeg">
+                                        <img src="./assets/img/nok.jpg">
+                                    </picture>
+                                    <picture class="dk">
+                                        <source srcset="./assets/img/dkk.webp" type="image/webp">
+                                        <source srcset="./assets/img/dkk.jpg" type="image/jpeg">
+                                        <img src="./assets/img/dkk.jpg">
+                                    </picture>
+                                    <picture class="cz">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="ro">
+                                        <source srcset="./assets/img/ron.webp" type="image/webp">
+                                        <source srcset="./assets/img/ron.jpg" type="image/jpeg">
+                                        <img src="./assets/img/ron.jpg">
+                                    </picture>
+                                    <picture class="hu">
+                                        <source srcset="./assets/img/huf.webp" type="image/webp">
+                                        <source srcset="./assets/img/huf.jpg" type="image/jpeg">
+                                        <img src="./assets/img/huf.jpg">
+                                    </picture>
+                                    <picture class="jp">
+                                        <source srcset="./assets/img/jpy.webp" type="image/webp">
+                                        <source srcset="./assets/img/jpy.jpg" type="image/jpeg">
+                                        <img src="./assets/img/jpy.jpg">
+                                    </picture>
+                                    <div class="pt">
+                                        <div class="elem_cur_pt">
+                                            <picture>
+                                                <source srcset="./assets/img/euro.webp" type="image/webp">
+                                                <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                                <img src="./assets/img/euro.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_brl">
+                                            <picture>
+                                                <source srcset="./assets/img/brl.webp" type="image/webp">
+                                                <source srcset="./assets/img/brl.jpg" type="image/jpeg">
+                                                <img src="./assets/img/brl.jpg">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="es">
+                                        <div class="elem_cur_ar">
+                                            <picture>
+                                                <source srcset="./assets/img/ars.webp" type="image/webp">
+                                                <source srcset="./assets/img/ars.jpg" type="image/jpeg">
+                                                <img src="./assets/img/ars.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_cl">
+                                            <picture>
+                                                <source srcset="./assets/img/clp.webp" type="image/webp">
+                                                <source srcset="./assets/img/clp.jpg" type="image/jpeg">
+                                                <img src="./assets/img/clp.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_pe">
+                                            <picture>
+                                                <source srcset="./assets/img/pen.webp" type="image/webp">
+                                                <source srcset="./assets/img/pen.jpg" type="image/jpeg">
+                                                <img src="./assets/img/pen.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_ec">
+                                            <picture>
+                                                <img src="./assets/img/usd.jpg">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scratch_txt">
+                                    <div class="en">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ph">
+                                        <picture class="x58 x_img">
+                                            <source srcset="./assets/img/x58.webp" type="image/webp">
+                                            <source srcset="./assets/img/x58.png" type="image/png">
+                                            <img src="./assets/img/x58.png">
+                                        </picture>
+                                    </div>
+                                    <div class="th">
+                                        <picture class="x37 x_img">
+                                            <source srcset="./assets/img/x37.webp" type="image/webp">
+                                            <source srcset="./assets/img/x37.png" type="image/png">
+                                            <img src="./assets/img/x37.png">
+                                        </picture>
+                                    </div>
+                                    <div class="vn">
+                                        <picture class="x50 x_img">
+                                            <source srcset="./assets/img/x50.webp" type="image/webp">
+                                            <source srcset="./assets/img/x50.png" type="image/png">
+                                            <img src="./assets/img/x50.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ru">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="pt">
+                                        <div class="elem_cur_pt">
+                                            <picture class="x10 x_img">
+                                                <source srcset="./assets/img/x10.webp" type="image/webp">
+                                                <source srcset="./assets/img/x10.png" type="image/png">
+                                                <img src="./assets/img/x10.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_brl">
+                                            <picture class="x25 x_img">
+                                                <source srcset="./assets/img/x25.webp" type="image/webp">
+                                                <source srcset="./assets/img/x25.png" type="image/png">
+                                                <img src="./assets/img/x25.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="jp">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="hu">
+                                        <picture class="x15 x_img">
+                                            <source srcset="./assets/img/x15.webp" type="image/webp">
+                                            <source srcset="./assets/img/x15.png" type="image/png">
+                                            <img src="./assets/img/x15.png">
+                                        </picture>
+                                    </div>
+                                    <div class="el">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="lt">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="lv">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ee">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="cz">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="de">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="no">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="dk">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="pl">
+                                        <picture class="x8 x_img">
+                                            <source srcset="./assets/img/x8.webp" type="image/webp">
+                                            <source srcset="./assets/img/x8.png" type="image/png">
+                                            <img src="./assets/img/x8.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ro">
+                                        <picture class="x8 x_img">
+                                            <source srcset="./assets/img/x8.webp" type="image/webp">
+                                            <source srcset="./assets/img/x8.png" type="image/png">
+                                            <img src="./assets/img/x8.png">
+                                        </picture>
+                                    </div>
+                                    <div class="es">
+                                        <div class="elem_cur_ar">
+                                            <picture class="x100 x_img">
+                                                <source srcset="./assets/img/x100.webp" type="image/webp">
+                                                <source srcset="./assets/img/x100.png" type="image/png">
+                                                <img src="./assets/img/x100.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_cl">
+                                            <picture class="x35 x_img">
+                                                <source srcset="./assets/img/x45.webp" type="image/webp">
+                                                <source srcset="./assets/img/x45.png" type="image/png">
+                                                <img src="./assets/img/x45.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_pe">
+                                            <picture class="x20 x_img">
+                                                <source srcset="./assets/img/x20.webp" type="image/webp">
+                                                <source srcset="./assets/img/x20.png" type="image/png">
+                                                <img src="./assets/img/x20.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_ec">
+                                            <picture class="x10 x_img">
+                                                <source srcset="./assets/img/x10.webp" type="image/webp">
+                                                <source srcset="./assets/img/x10.png" type="image/png">
+                                                <img src="./assets/img/x10.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scratch_outer scratch" id="scratch_4" data-scratch="scratch4">
+                                <div class="scratch_hover"></div>
+                                <img alt="" class="scratch_action" src="./assets/img/scratch-anim.gif">
+                                <img alt="" class="scratch_used" src="./assets/img/scratch-used.png">
+                                <div class="scratch_bonus">
+                                    <picture class="en">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="th">
+                                        <source srcset="./assets/img/thb.webp" type="image/webp">
+                                        <source srcset="./assets/img/thb.jpg" type="image/jpeg">
+                                        <img src="./assets/img/thb.jpg">
+                                    </picture>
+                                    <picture class="ph">
+                                        <source srcset="./assets/img/php.webp" type="image/webp">
+                                        <source srcset="./assets/img/php.jpg" type="image/jpeg">
+                                        <img src="./assets/img/php.jpg">
+                                    </picture>
+                                    <picture class="vn">
+                                        <source srcset="./assets/img/vnd.webp" type="image/webp">
+                                        <source srcset="./assets/img/vnd.jpg" type="image/jpeg">
+                                        <img src="./assets/img/vnd.jpg">
+                                    </picture>
+                                    <picture class="ru">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="el">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="lt">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="de">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="lv">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="ee">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="pl">
+                                        <source srcset="./assets/img/plzl.webp" type="image/webp">
+                                        <source srcset="./assets/img/plzl.jpg" type="image/jpeg">
+                                        <img src="./assets/img/plzl.jpg">
+                                    </picture>
+                                    <picture class="no">
+                                        <source srcset="./assets/img/nok.webp" type="image/webp">
+                                        <source srcset="./assets/img/nok.jpg" type="image/jpeg">
+                                        <img src="./assets/img/nok.jpg">
+                                    </picture>
+                                    <picture class="dk">
+                                        <source srcset="./assets/img/dkk.webp" type="image/webp">
+                                        <source srcset="./assets/img/dkk.jpg" type="image/jpeg">
+                                        <img src="./assets/img/dkk.jpg">
+                                    </picture>
+                                    <picture class="cz">
+                                        <source srcset="./assets/img/euro.webp" type="image/webp">
+                                        <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                        <img src="./assets/img/euro.jpg">
+                                    </picture>
+                                    <picture class="ro">
+                                        <source srcset="./assets/img/ron.webp" type="image/webp">
+                                        <source srcset="./assets/img/ron.jpg" type="image/jpeg">
+                                        <img src="./assets/img/ron.jpg">
+                                    </picture>
+                                    <picture class="hu">
+                                        <source srcset="./assets/img/huf.webp" type="image/webp">
+                                        <source srcset="./assets/img/huf.jpg" type="image/jpeg">
+                                        <img src="./assets/img/huf.jpg">
+                                    </picture>
+                                    <picture class="jp">
+                                        <source srcset="./assets/img/jpy.webp" type="image/webp">
+                                        <source srcset="./assets/img/jpy.jpg" type="image/jpeg">
+                                        <img src="./assets/img/jpy.jpg">
+                                    </picture>
+                                    <div class="pt">
+                                        <div class="elem_cur_pt">
+                                            <picture>
+                                                <source srcset="./assets/img/euro.webp" type="image/webp">
+                                                <source srcset="./assets/img/euro.jpg" type="image/jpeg">
+                                                <img src="./assets/img/euro.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_brl">
+                                            <picture>
+                                                <source srcset="./assets/img/brl.webp" type="image/webp">
+                                                <source srcset="./assets/img/brl.jpg" type="image/jpeg">
+                                                <img src="./assets/img/brl.jpg">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="es">
+                                        <div class="elem_cur_ar">
+                                            <picture>
+                                                <source srcset="./assets/img/ars.webp" type="image/webp">
+                                                <source srcset="./assets/img/ars.jpg" type="image/jpeg">
+                                                <img src="./assets/img/ars.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_cl">
+                                            <picture>
+                                                <source srcset="./assets/img/clp.webp" type="image/webp">
+                                                <source srcset="./assets/img/clp.jpg" type="image/jpeg">
+                                                <img src="./assets/img/clp.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_pe">
+                                            <picture>
+                                                <source srcset="./assets/img/pen.webp" type="image/webp">
+                                                <source srcset="./assets/img/pen.jpg" type="image/jpeg">
+                                                <img src="./assets/img/pen.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_ec">
+                                            <picture>
+                                                <img src="./assets/img/usd.jpg">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scratch_txt">
+                                    <div class="en">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ph">
+                                        <picture class="x58 x_img">
+                                            <source srcset="./assets/img/x58.webp" type="image/webp">
+                                            <source srcset="./assets/img/x58.png" type="image/png">
+                                            <img src="./assets/img/x58.png">
+                                        </picture>
+                                    </div>
+                                    <div class="th">
+                                        <picture class="x37 x_img">
+                                            <source srcset="./assets/img/x37.webp" type="image/webp">
+                                            <source srcset="./assets/img/x37.png" type="image/png">
+                                            <img src="./assets/img/x37.png">
+                                        </picture>
+                                    </div>
+                                    <div class="vn">
+                                        <picture class="x50 x_img">
+                                            <source srcset="./assets/img/x50.webp" type="image/webp">
+                                            <source srcset="./assets/img/x50.png" type="image/png">
+                                            <img src="./assets/img/x50.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ru">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="pt">
+                                        <div class="elem_cur_pt">
+                                            <picture class="x10 x_img">
+                                                <source srcset="./assets/img/x10.webp" type="image/webp">
+                                                <source srcset="./assets/img/x10.png" type="image/png">
+                                                <img src="./assets/img/x10.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_brl">
+                                            <picture class="x25 x_img">
+                                                <source srcset="./assets/img/x25.webp" type="image/webp">
+                                                <source srcset="./assets/img/x25.png" type="image/png">
+                                                <img src="./assets/img/x25.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="jp">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="hu">
+                                        <picture class="x15 x_img">
+                                            <source srcset="./assets/img/x15.webp" type="image/webp">
+                                            <source srcset="./assets/img/x15.png" type="image/png">
+                                            <img src="./assets/img/x15.png">
+                                        </picture>
+                                    </div>
+                                    <div class="el">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="lt">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="lv">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ee">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="cz">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="de">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="no">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="dk">
+                                        <picture class="x10 x_img">
+                                            <source srcset="./assets/img/x10.webp" type="image/webp">
+                                            <source srcset="./assets/img/x10.png" type="image/png">
+                                            <img src="./assets/img/x10.png">
+                                        </picture>
+                                    </div>
+                                    <div class="pl">
+                                        <picture class="x8 x_img">
+                                            <source srcset="./assets/img/x8.webp" type="image/webp">
+                                            <source srcset="./assets/img/x8.png" type="image/png">
+                                            <img src="./assets/img/x8.png">
+                                        </picture>
+                                    </div>
+                                    <div class="ro">
+                                        <picture class="x8 x_img">
+                                            <source srcset="./assets/img/x8.webp" type="image/webp">
+                                            <source srcset="./assets/img/x8.png" type="image/png">
+                                            <img src="./assets/img/x8.png">
+                                        </picture>
+                                    </div>
+                                    <div class="es">
+                                        <div class="elem_cur_ar">
+                                            <picture class="x100 x_img">
+                                                <source srcset="./assets/img/x100.webp" type="image/webp">
+                                                <source srcset="./assets/img/x100.png" type="image/png">
+                                                <img src="./assets/img/x100.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_cl">
+                                            <picture class="x35 x_img">
+                                                <source srcset="./assets/img/x45.webp" type="image/webp">
+                                                <source srcset="./assets/img/x45.png" type="image/png">
+                                                <img src="./assets/img/x45.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_pe">
+                                            <picture class="x20 x_img">
+                                                <source srcset="./assets/img/x20.webp" type="image/webp">
+                                                <source srcset="./assets/img/x20.png" type="image/png">
+                                                <img src="./assets/img/x20.png">
+                                            </picture>
+                                        </div>
+                                        <div class="elem_cur_ec">
+                                            <picture class="x10 x_img">
+                                                <source srcset="./assets/img/x10.webp" type="image/webp">
+                                                <source srcset="./assets/img/x10.png" type="image/png">
+                                                <img src="./assets/img/x10.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="popup_overlay">
+                <div class="popup_window" id="popup_window_2">
+                    <div class="popup__content">
+                        <div class="popup_txt_2">
+                            <span class="en">
+                        You won <strong>77 Free Spins</strong>
+                    </span>
+                            <span class="ph">
+                        You won <strong>77 Free Spins</strong>
+                    </span>
+                            <span class="th">
+                            คุณชนะรอบหมุนฟรี<strong> 77</strong>
+                    </span>
+                            <span class="vn">
+                            Bạn đã giành được <strong>77 vòng quay</strong>
+                    </span>
+                            <span class="ru">
+                        ВЫ ВЫИГРАЛИ <strong>77 Фриспинов</strong>
+                    </span>
+                            <span class="dk">
+                            You’ve won  <strong>77 Free Spins</strong>
+                    </span>
+                            <span class="de">
+                       DU HAST<strong>77 Freispiele</strong>
+                    </span>
+                            <span class="pl">
+                        Twoja wygrana to <strong>77 darmowych obrotów</strong>
+                    </span>
+                            <span class="no">
+                        Du vant <strong>77 gratisspinn</strong>
+                    </span>
+                            <span class="cz">
+                        Vyhráli jste <strong>77 zatočení zdarma</strong>
+                    </span>
+                            <span class="ro">
+                        Ați câștigat <strong>77 de rotiri gratuite</strong>
+                    </span>
+                            <span class="ee">
+                        Oled võitnud <strong>77 tasuta spinni</strong>
+                    </span>
+                            <span class="lv">
+                        Jūs laimējāt <strong>77 bezmaksas griezienus</strong>
+                    </span>
+                            <span class="lt">
+                        Laimėjote <strong>77 nemokamų sukimų</strong>
+                    </span>
+                            <span class="el">
+                        Κέρδισες <strong>77 δωρεάν περιστροφές</strong>
+                    </span>
+                            <span class="hu">
+                        <strong>77 ingyenjátékot nyertél</strong>
+                    </span>
+                            <span class="jp">
+                        フリースピン77回を獲得しました
+                    </span>
+                            <span class="pt">
+                        Você ganhou <strong>77 giros grátis</strong>
+                    </span>
+                            <span class="es">
+                        Ganaste <strong>77 giros gratis</strong>
+                    </span>
+                        </div>
+                        <img alt="" class="popup_img" src="./assets/img/gamelogo.png">
+                        <div class="popup_btn" id="popup_btn_2">
+                            <span class="en">Continue</span>
+                            <span class="ph">Continue</span>
+                            <span class="th">ไปต่อ</span>
+                            <span class="vn">Tiếp tục</span>
+                            <span class="ru">Продолжить</span>
+                            <span class="dk">Continue</span>
+                            <span class="de">Fortfahren</span>
+                            <span class="pl">Kontynuuj</span>
+                            <span class="no">Fortsett</span>
+                            <span class="cz">Pokračovat</span>
+                            <span class="ro">Continuați</span>
+                            <span class="ee">Jätka</span>
+                            <span class="lv">Turpināt</span>
+                            <span class="lt">Tęsti</span>
+                            <span class="el">Παιξε πάλι</span>
+                            <span class="hu">Folytatás</span>
+                            <span class="jp">続ける</span>
+                            <span class="pt">Continuar</span>
+                            <span class="es">Continuar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup_window" id="popup_window_3">
+                    <div class="popup__content">
+                        <div class="popup_txt_3">
+                            <span class="en">
+                        Pick up your welcome bonus
+                        <strong>2000 € + 77 Free Spins</strong>
+                    </span>
+                            <span class="ph">
+                        Pick up your welcome bonus
+                        <strong>116000 PHP + 77 Free Spins</strong>
+                    </span>
+                            <span class="th">
+                        รับโบนัสต้อนรับของคุณ<br>
+                        <strong>74 000 THB +<br> 77 รอบใน</strong>
+                    </span>
+                            <span class="vn">
+                        Nhận phần thưởng chào mừng<br>
+                        <strong>50&nbsp000&nbsp000&nbspVND<br> + 77 vòng quay</strong>
+                    </span>
+                            <span class="ru">
+                        УСПЕЙ ЗАБРАТЬ СВОЙ БОНУС
+                        <strong>2000 € + 77 Фриспинов</strong>
+                    </span>
+                            <span class="dk">
+                        Pick up your welcome bonus
+                        <strong>10000DKK + 77 Free Spins</strong>
+                    </span>
+                            <span class="de">
+                        Holen Sie sich Ihren Willkommensbonus
+                        <strong>2.000 € + 77 Freispiele</strong>
+                    </span>
+                            <span class="pl">
+                        Odbierz swój bonus powitalny
+                        <strong>8000zł + 77 darmowych obrotów</strong>
+                    </span>
+                            <span class="no">
+                        Hent velkomstbonusen din
+                        <strong>NOK 20000 + 77 gratisspinn</strong>
+                    </span>
+                            <span class="cz">
+                        Vyzvedněte si uvítací bonus
+                        <strong>2000 € + 77 zatočení zdarma</strong>
+                    </span>
+                            <span class="ro">
+                        Luați bonusul de bun venit: <strong>8000 RON + 77 de rotiri gratuite</strong>
+                    </span>
+                            <span class="ee">
+                        Saa oma tervitusboonust <strong>2000 € + 77 tasuta spinni</strong>
+                    </span>
+                            <span class="lv">
+                        Saņemiet reģistrēšanās bonusu <strong>2000 € + 77 bezmaksas griezienus</strong>
+                    </span>
+                            <span class="lt">
+                        Pasiimki <strong>2000 € + 77 nemokamų sukimų</strong> naujoko premiją
+                    </span>
+                            <span class="el">
+                        διεκδικήστε το επιπλέον μπόνους <strong>2000 € + 77 δωρεάν Spins</strong>
+                    </span>
+                            <span class="hu">
+                        Gyűjtsd be a <strong>600 000 HUF és 77 ingyenjátékos üdvözlőbónuszod</strong>
+                    </span>
+                            <span class="jp">
+                        ウェルカムボーナス<strong>200 000 jpyと77フリースピン</strong>を獲得しよう
+                    </span>
+                            <span class="pt">
+                        Pegue seu Bônus de Boas-vindas
+                        <strong>2000 € + 77 giros grátis</strong>
+
+                    </span>
+                            <span class="es">
+                        Obtén tu Bono de bienvenida de
+                        <strong class="elem_cur_ar">200 000 ARS + 77 giros gratis</strong>
+                        <strong class="elem_cur_cl">1 800 000 CLP + 77 giros gratis</strong>
+                        <strong class="elem_cur_ec">2000 USD + 77 giros gratis</strong>
+                    </span>
+                        </div>
+                        <div class="popup_bonuses">
+                            <div class="bonus_1 bonus_wrap">
+                                <div>
+                                    <img alt="" src="./assets/img/fs-icon.svg">
+                                    <em>Fs:</em>
+                                </div>
+                                <strong><span class="code">77</span></strong>
+                            </div>
+                            <div class="bonus_2 bonus_wrap ">
+                                <div>
+                                    <img alt="" src="./assets/img/money-icon.svg">
+                                    <em>
+                                    <span class="en">€:</span>
+                                    <span class="ph">PHP:</span>
+                                    <span class="vn">VND:</span>
+                                    <span class="th">THB:</span>
+                                    <span class="ru">€:</span>
+                                    <span class="hu">HUF:</span>
+                                    <span class="el">€:</span>
+                                    <span class="ee">€:</span>
+                                    <span class="de">€:</span>
+                                    <span class="pl">zł:</span>
+                                    <span class="no">NOK:</span>
+                                    <span class="dk">DKK:</span>
+                                    <span class="cz">€:</span>
+                                    <span class="lv">€:</span>
+                                    <span class="lt">€:</span>
+                                    <span class="ro">RON:</span>
+                                    <span class="jp">JPY:</span>
+                                    <span class="pt">
+                                    <span class="elem_cur_brl">BRL:</span>
+                                    <span class="elem_cur_pt">€:</span>
+                                </span>
+                                <span class="es">
+                                    <span class="elem_cur_ar">ARS:</span>
+                                    <span class="elem_cur_cl">CLP:</span>
+                                    <span class="elem_cur_pe">PEN:</span>
+                                    <span class="elem_cur_ec">USD:</span>
+                                </span>
+                                </em>
+                                </div>
+                                <strong>
+                                <span class="en">2000</span>
+                                <span class="ph">116 000</span>
+                                <span class="vn">50 TRIỆU</span>
+                                <span class="th">74 000</span>
+                                <span class="ru">2000</span>
+                                <span class="pt">
+                                <span class="elem_cur_brl">10000</span>
+                                <span class="elem_cur_pt">2000</span>
+                            </span>
+                                <span class="el">2000</span>
+                                <span class="lt">2000</span>
+                                <span class="lv">2000</span>
+                                <span class="ee">2000</span>
+                                <span class="de">2000</span>
+                                <span class="pl">8000</span>
+                                <span class="no">20000</span>
+                                <span class="hu">600 000</span>
+                                <span class="jp">200 000</span>
+                                <span class="dk">10000</span>
+                                <span class="cz">2000</span>
+                                <span class="es">
+                                <span class="elem_cur_ar">200 000</span>
+                                <span class="elem_cur_cl">1 800 000</span>
+                                <span class="elem_cur_pe">8000</span>
+                                <span class="elem_cur_ec">2000</span>
+                            </span>
+                                <span class="ro">8000</span>
+                            </strong>
+                            </div>
+                        </div>
+                        <div class="popup_txt_4">
+                            <!-- <span class="en">Use promocode</span>
+                            <span class="ph">Use promocode</span>
+                            <span class="th">ใช้รหัสโปรโมชั่น</span>
+                            <span class="vn">Sử dụng mã khuyến mãi</span>
+                            <span class="ru">Вводи промокод</span>
+                            <span class="dk">Use promocode</span>
+                            <span class="de">Nutzen Sie den Aktionscode</span>
+                            <span class="pl">Użyj kodu promocyjnego</span>
+                            <span class="no">Bruk kampanjekoden</span>
+                            <span class="cz">Použijte promokód</span>
+                            <span class="ro">Folosiți codul promoțional</span>
+                            <span class="ee">Kasuta promokoodi</span>
+                            <span class="lv">Izmantojiet promo kodu</span>
+                            <span class="lt">Naudoti akcijos kodą</span>
+                            <span class="el">χρησιμοποιώντας τον κωδικό προσφοράς</span>
+                            <span class="hu">Promóciós kód használata</span>
+                            <span class="jp">プロモコードを使用する</span>
+                            <span class="pt">Usar código promocional</span>
+                            <span class="es">Usar el código de promoción</span> -->
+                        </div>
+                        <p class="email-enter">Please enter your email</p>
+                        <div class="popup_email en">
+                            <form class="big-form" action="https://app.confirmedsender.com/lists/sf020b8d0tf76/subscribe"
+                            method="post">
+                            <input class="form-control field-email field-type-text" placeholder="Enter your email here"
+                                type="email" required value="" name="EMAIL" id="EMAIL" 
+                                 
+                                />
+                            <input class="form-control field-cid field-type-text" placeholder="Cid" type="hidden" value=""
+                                name="CID" id="CID" />
+                            <input class="form-control field-camp field-type-text" placeholder="CAMP" type="hidden" value="bonus-ppc"
+                                name="CAMP" id="CAMP" />
+                            <input class="form-control field-camp2 field-type-text" placeholder="CAMP2" type="hidden" value=""
+                                name="CAMP2" id="CAMP2" />
+                            <input type="hidden" name="83771a48627e161acc0946449539ccfd290f4d51" tabindex="-1"
+                                autocomplete="83771a48627e161acc0946449539ccfd290f4d51" value="" />
+                            <input type="submit" class="btn btn-primary btn-flat" name="yt0"
+                                value="GET NOW" 
+                               
+                                />
+                        </form>
+                        </div>
+                        <div class="popup_email cz">
+                            <form class="big-form" action="https://app.confirmedsender.com/lists/sf020b8d0tf76/subscribe"
+                            method="post">
+                            <input class="form-control field-email field-type-text" placeholder="Zde zadej svůj email"
+                                type="email" required value="" name="EMAIL" id="EMAIL" 
+                                 
+                                />
+                                <input class="form-control field-cid field-type-text" placeholder="Cid" type="hidden" value=""
+                                name="CID" id="CID" />
+                            <input class="form-control field-camp field-type-text" placeholder="CAMP" type="hidden" value="bonus-ppc"
+                                name="CAMP" id="CAMP" />
+                            <input class="form-control field-camp2 field-type-text" placeholder="CAMP2" type="hidden" value=""
+                                name="CAMP2" id="CAMP2" />
+                            <input type="hidden" name="83771a48627e161acc0946449539ccfd290f4d51" tabindex="-1"
+                                autocomplete="83771a48627e161acc0946449539ccfd290f4d51" value="" />
+                            <input type="submit" class="btn btn-primary btn-flat" name="yt0"
+                                value="ZÍSKAT IHNED" 
+                              
+                                />
+                        </form>
+                        </div>
+                        <span class="text-beneath" style="margin-top: 5px;">
+                            Odesláním emailu souhlasíte se zásadami <a href="#">ochrany osobních údajů</a>
+                           </span>
+    
+    
+                        </div>
+
+
+        </div>
+    </div>
+    <script>
+        function onLoadBundle() {
+            fp.load({
+                monitoring: false
+            }).then(function(agent) {
+                return agent.get()
+            }).then(function(result) {
+                document.cookie = 'fp=' + result.id + ';path=/; expires=' + (new Date(new Date().getTime() + 63072000 * 1000)).toUTCString()
+            });
+            window.addEventListener('dtchange', function(e) {
+                document.cookie = 'dt=' + (e.detail.open ? 1 : 0) + ';path=/; expires=' + (new Date(new Date().getTime() + 63072000 * 1000)).toUTCString()
+            });
+            pm('pm', '63072000');
+            bs('bl', 'bic', 'bct', 'bdt');
+        }
+    </script>
+    <script src="js/bundle-341220101100.min.js" async onload="onLoadBundle();"></script>
+    <script src="js/lm-1.0.0.min.js"></script>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="../ice-casino/js/icon.js"></script>
+<script>
+    $('#wheel-spinner-img').on('click', function () {
+        var o = document.createElement("img");
+        o.src = 'https://finmag.com/click.php?event1=1';
+        o.referrerPolicy = 'no-referrer-when-downgrade';
+    })
+</script>
+
+
+</html>
